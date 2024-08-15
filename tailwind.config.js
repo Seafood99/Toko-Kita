@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+
+import flowbite from 'flowbite/plugin';
 export default {
   content: [
     "./index.html",
@@ -13,8 +15,11 @@ export default {
         sm: "2rem",
         lg: "4rem",
         xl: "5rem",
+        '2xl': "6rem",
       }
     }
   },
-  plugins: [],
+  plugins: [
+      flowbite
+  ],
 }
